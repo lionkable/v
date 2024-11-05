@@ -1,0 +1,108 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+/* Navbar logo */
+.navbar-logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.navbar-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #f1c40f;
+}
+
+/* Hamburger icon for mobile */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle .bar {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}
+
+/* Section content */
+.content {
+    padding: 50px;
+    text-align: center;
+}
+/* styles.css */
+body {
+ background-image: url('C:/Users/User/Desktop/g/images/download.jpeg');
+
+    background-size: cover;  /* Makes sure the image covers the entire screen */
+    background-position: center center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    height: 100vh;  /* Ensures the body takes full height of the viewport */
+    margin: 0;  /* Removes default margin around the body */
+}
+
